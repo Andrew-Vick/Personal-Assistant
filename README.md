@@ -17,6 +17,6 @@ Available Commands
 - What is the weather today
 - Stop (stops playing sounds/talking)
 
-The commands below are currently setup to send an email to my phone with a certain format. This allows a shortcut on my iphone to then receive the email and then open/close my Aladdin Garage Door
+The commands below are currently setup to send an email to my phone with a certain format. This allows a shortcut on my iphone to then receive the email and then open/close my Aladdin Garage Door (Shortcut is disabled for security reasons)
 - Open garage door
 - Close garage door
