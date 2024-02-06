@@ -803,7 +803,6 @@ def main():
                     spoken_text = recognizer.recognize_google(audio)
                     if "stop listening" in spoken_text.lower():
                         print("Stopping listening...")
-                        break
                     elif "shuffle" in spoken_text.lower() and "my" in spoken_text.lower() and "playlist" in spoken_text.lower():
                         shuffle_play_my_playlist(spoken_text, spotifyObject)
                     elif "shuffle" in spoken_text.lower() and "playlist" in spoken_text.lower():
@@ -813,10 +812,12 @@ def main():
                     elif "play" in spoken_text.lower() and "by" in spoken_text.lower():
                         play_specific_song_artist(spoken_text, spotifyObject)
                     elif "open garage door" in spoken_text.lower():
-                        send_email(gmail_service, "advick01@gmail.com", "Open Door", "This is the body of the email")
+                        email = os.getenv('EMAIL')
+                        send_email(gmail_service, email, "Open Door", "This is the body of the email")
                         threaded_speak("Sending command to open garage door.")
                     elif "close garage door" in spoken_text.lower():
-                        send_email(gmail_service, "advick01@gmail.com", "Close Door", "This is the body of the email")
+                        email = os.getenv('EMAIL')
+                        send_email(gmail_service, email, "Close Door", "This is the body of the email")
                         threaded_speak("Sending command to close garage door.")
                     elif "play" in spoken_text.lower():
                         play_top_song_by_name(spoken_text, spotifyObject)
