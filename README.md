@@ -7,11 +7,11 @@ Available Commands
 - Shuffle playlist {Playlist name}
 - Shuffle {artist name}
 - Play {song name} by {artist name}
-- play {song name}
-- set timer for {amount of time}
-- set an alarm for {time}
-- set a reminder to {reminder details} on {date} at {time}
-- what are my grades
+- Play {song name}
+- Set timer for {amount of time}
+- Set an alarm for {time}
+- Set a reminder to {reminder details} on {date} at {time}
+- What are my grades
 - How many {measurment} are in {measurment}
 - What is the forcast for the week
 - What is the weather today
